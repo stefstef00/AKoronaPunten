@@ -1,0 +1,30 @@
+{
+    questions: [
+        {
+            text: "Hoi je moeder is dik",
+            answers: [
+                {tekst: "Ja dat is correct",
+                punten: 69},
+                {tekst: "Misschien",
+                punten: 46},
+                {tekst: "Nietes",
+                punten: 0},
+                {tekst: "Nee de jouwe",
+                punten: 5}
+                ]
+        },
+        {
+            text: "Is je pa dat ook?",
+            answers: [
+                {tekst: "Jazeker",
+                punten: 69},
+                {tekst: "Misschien",
+                punten: 46},
+                {tekst: "Nee, alleen vrouwen kunnen dik zijn",
+                punten: 420},
+                {tekst: "Nee de jouwe",
+                punten: 5}
+                ]
+        }
+    ]
+}
