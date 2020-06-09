@@ -1,3 +1,10 @@
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Some common classes to avoid code duplication.
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+*/
+
 html, body {
     padding: 0;
     margin: 0;
@@ -9,41 +16,31 @@ html, body {
     overflow: hidden;
 }
 
-/*
-
-Homepage specific styling.
-
-*/
-
-#homepage header h1 {
-    margin-top: 200px;
-    margin-bottom: 100px;
-    
-    font-size: 80px;
-    
-    color: #ff76af;
+.full-width {
+    width: 100%;
 }
 
-#homepage footer {
-    background: #444;
-    position: absolute;
-    bottom: 0;
-    padding: 3px;
+.text-center {
+    text-align: center;
 }
 
-#homepage footer span {
-    color: #777;
+a, a:hover, a:visited, a:active {
+    text-decoration: none;
 }
 
 
-/*
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 Some default misc classes to avoid code duplication.
 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 */
 
 .button {
     background: #ff76af;
+    
     padding: 10px 20px 15px 20px;
     border-radius: 20px;
     
@@ -61,18 +58,82 @@ Some default misc classes to avoid code duplication.
     background: #ff579d;
 }
 
-
-
-/*
-
-Some common classes to avoid code duplication.
-
-*/
-
-.full-width {
-    width: 100%;
+footer {
+    background: #444;
+    position: absolute;
+    bottom: 0;
+    padding: 3px;
 }
 
-.text-center {
-    text-align: center;
+footer span {
+    color: #777;
+}
+
+
+
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Homepage specific styling.
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+*/
+
+#homepage header h1, #endscreen header h1 {
+    margin-top: 200px;
+    margin-bottom: 100px;
+    
+    font-size: 80px;
+    
+    color: #ff76af;
+}
+
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Question page specific styling.
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+*/
+
+#questionPage div h2 {
+    margin: 200px 0 50px 0;
+    
+    font-size: 40px;
+    
+    color: #ff76af;
+    
+    height: 48px;
+}
+
+#questionPage .button {
+    padding: 5px 10px 7px 10px;
+    border-radius: 10px;
+    
+    margin-bottom: 20px;
+    
+    font-size: 20px;
+    
+    width: 500px;
+    
+    margin-left: calc(50% - 250px);
+    
+    height: 24px;
+}
+
+
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Endscreen specific styling.
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+*/
+
+#endscreen p {
+    color: #ff76af;
+    font-size: 30px;
 }

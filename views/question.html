@@ -3,14 +3,44 @@
     
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         
+        <link rel="stylesheet" type="text/css" href="../resources/style/style.css">
+        
     </head>
     
     
-    <body>
+    <body id="questionPage">
     
-        <h1>Vraag x</h1>
+        <div class="full-width text-center">
+            <h2 id="question">Hoe dik is de moeder van je oma?</h2>
+        </div>
+
+        <div class="full-width">
+            
+            <div class="button text-center">
+                <a id="answer1" onclick="onAnswer(0);"></a>
+            </div>
+            
+            <div class="button text-center">
+                <a id="answer2" onclick="onAnswer(1);"></a>
+            </div>
+            
+            <div class="button text-center">
+                <a id="answer3" onclick="onAnswer(2);"></a>
+            </div>
+            
+            <div class="button text-center">
+                <a id="answer4" onclick="onAnswer(3);"></a>
+            </div>
+            
+        </div>
         
-        <p>1 vraag, 4 antwoorden.</p>
-    
+        <footer class="full-width text-center">
+        
+            <span>
+                Deze quiz wordt medemogelijk gemaAKt door IntergeilAKtisch.
+            </span>
+            
+        </footer>
+        
     </body>
 </html>
